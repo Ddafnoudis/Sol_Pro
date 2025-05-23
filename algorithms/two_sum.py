@@ -1,7 +1,7 @@
 import itertools
 
 class Solution(object):
-    def TwoSum(self, nums, target):
+    def twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -13,6 +13,7 @@ class Solution(object):
         for num in itertools.combinations(self.nums, 2):
             if sum(num) == self.target:
                 return nums.index(num[0]), nums.index(num[1])
+
 # List of numbers
 nums: list = [5, 10, 2, 33]
 # Target num
@@ -20,7 +21,7 @@ target: int = 7
 # Define the solution class
 solution = Solution()
 # Call the TwoSum method
-result = solution.TwoSum(nums, target)
+result = solution.twoSum(nums, target)
 # print the result
 print(result)
 
